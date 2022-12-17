@@ -11,9 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        handler()
     }
-
+    
+    func handler() {
+        let firstIndex = searchSubString(originStr: "aabcaabaaca", handlerStr: "aabaa")
+        print(firstIndex)
+    }
 
 }
 
